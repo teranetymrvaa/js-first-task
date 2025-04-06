@@ -1,0 +1,565 @@
+JS HAQQINDA KİTABXANA
+#####################
+
+
+🔴 𝟙  – 🔥.Js nədir?
+JavaScript — veb səhifələrə dinamik və interaktiv funksiyalar əlavə etmək üçün istifadə olunan proqramlaşdırma dilidir.
+Əsasən HTML və CSS ilə birlikdə işləyir. HTML faylına internal ve ya external olaraq qoşula bilir. Misal:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
+#####################
+
+🟠 𝟚 – 🌞.Js de datatypelar 
+JavaScript-də datatype anlayışı 2 boyük kateqoriyaya bölünür.
+🌈 2.1. Primitive Data Tipləri (Sadə Tiplər)
+Adı                       İzahi                     Misal
+String              Mətn                          "Salam"
+Number             Rəqəm                           42, 3.14
+Boolean          Doğru/yanlış                     true, false
+Undefined	    Təyin olunmayıb                  let a; → undefined
+Null	          Boş dəyər	                      let b = null;
+
+
+🌌 2.2. Object-based Data Tipləri
+Adı                İzah                            Nümunə
+Object	      verilənlər toplusu  	    { ad: "Terane", yas: 19 }
+Array	      Siyahı (massiv)	                   [1, 2, 3, 4]
+Function	     Funksiya	        function salam() { console.log("Salam"); }
+#####################
+
+🟡 𝟛 – 🌟. Js de açar sözlər
+JavaScript-də let və const dəyişən elan etmək üçün istifadə olunan iki əsas açar sözdür. Bunlarla yanaşı var da varki bu daha
+kohne hesab edilir. Let açar sözü daha çox istifadə olunur. Const ilə fərqi odur ki let ilə təyin etdiyimiz dəyişənin qiymətini
+dəyişə bildiyimiz halda const bütün kod daxilində sabit qalir.Var açar sözünün artıq istifadə olunmama səbəbi isə onun kod daxilində
+errorlar verməməsi bunun isə bizə çətinlik yaratmasidir.Misal olaraq hoistingi gostermek olar. Let error verdiyi halda var undefined qaytarir.
+
+console.log(a); // Error: Cannot access 'a' before initialization
+let a = 3;
+
+console.log(b); // undefined
+var b = 5;
+#####################
+
+🔴 𝟙 – 🔥 Qırmızı enerji!
+🟠 𝟚 – 🌞 Parlaq və aktiv
+🟡 𝟛 – 🌟 Parıltılı və yüngül
+🟢 𝟜 – 🌿 Təbii və balanslı
+🔵 𝟝 – 🌊 Dərin və ağıllı
+🟣 𝟞 – 🔮 Sehrli və mistik
+🟤 𝟟 – 🪵 Sabit və etibarlı
+⚫ 𝟠 – 🕶️ Cool və gizli
+⚪ 𝟡 – 💫 Təmiz və güclü
+
+🟢 𝟜 – 🌿. Js de Operatorlar
+JavaScript-də müxtəlif operatorlar mövcuddur və hər biri fərqli növ əməliyyatları yerinə yetirir. 
+Bu operatorlar aritmetik, təyin etmə, müqayisə, məntiqi, bitwise və s. kimi növlərə ayrılır.
+Hər birinin öz funksiyası və istifadəsi var. Aşağıda JavaScript-dəki əsas operatorları və onların istifadəsini izah edek.
+🟠 4.1 🟠 Aritmetik Operatorlar (Arithmetic Operators)
+Bu operatorlar, ədədi dəyərlərlə əməliyyatlar aparmaq üçün istifadə olunur.
+
+Operator	       İzah          	Nümunə
++	             Toplama	     5 + 3 → 8
+-	             Çıxarma	     5 - 3 → 2
+*	              Vurma	         5 * 3 → 15
+/	              Bölmə	         6 / 3 → 2
+%	         Qalıq (modulus)	 5 % 3 → 2
+++	       Artırma (increment)	 let a = 5; a++ → 6
+--	      Azaltma (decrement)	 let b = 5; b-- → 4
+MİSAL🟠
+let x = 10;
+let y = 2;
+console.log(x + y); // 12
+console.log(x - y); // 8
+console.log(x * y); // 20
+console.log(x / y); // 5
+console.log(x % y); // 0
+
+
+
+
+🟢 4.2 🟢Təyin Etmə Operatorları (Assignment Operators)
+Bu operatorlar, bir dəyişənə dəyər təyin etmək üçün istifadə olunur.
+
+Operator	          İzah	                      Nümunə
+=	         Dəyişənə dəyər təyin etmək	       let a = 5;
++=       	Toplama və təyin etmə	       a += 3; → a = a + 3
+-=	        Çıxarma və təyin etmə	      a -= 2; → a = a - 2
+*=	        Vurma və təyin etmə	         a *= 2; → a = a * 2
+/=	        Bölmə və təyin etmə	         a /= 4; → a = a / 4
+%=	        Qalıq və təyin etmə	          a %= 3; → a = a % 3
+
+MİSAL🟢
+let a = 10;
+a += 5; // a = a + 5 → 15
+a -= 3; // a = a - 3 → 12
+a *= 2; // a = a * 2 → 24
+a /= 4; // a = a / 4 → 6
+a %= 3; // a = a % 3 → 0
+
+
+
+
+🔵 4.3 🔵 Müqayisə Operatorları (Comparison Operators)
+Bu operatorlar, iki dəyəri müqayisə edir və nəticə olaraq true və ya false döndürür.
+
+Operator	                   İzah	                             Nümunə
+==	              Bərabərlik (dəyər müqayisəsi)	                5 == '5' → true
+===	             Tip və bərabərlik (tip + dəyər müqayisəsi)   	5 === '5' → false
+!=	             Bərabər olmama (dəyər müqayisəsi)	             5 != 3 → true
+!==	            Tip və bərabər olmama (tip + dəyər müqayisəsi) 	5 !== '5' → true
+>	                     Böyükdür	                             5 > 3 → true
+<	                     Kiçikdir                              	3 < 5 → true
+>=	                 Böyük və ya bərabərdir                 	5 >= 5 → true
+<=	                Kiçik və ya bərabərdir	                     3 <= 5 → true
+
+MİSAL🔵
+console.log(5 == '5');   // true (çünki yalnız dəyəri müqayisə edir)
+console.log(5 === '5');  // false (çünki həm dəyəri, həm də tipi müqayisə edir)
+console.log(10 != 5);    // true
+console.log(3 > 2);      // true
+console.log(7 <= 7);     // true
+
+
+
+🟣 4.4 🟣Məntiqi Operatorlar (Logical Operators)
+Məntiqi operatorlar, şərtlərin qarşılaşdırılması və ya Boolean dəyərlərlə əməliyyatlar üçün istifadə olunur.
+
+Operator	                   İzah	                             
+&&                          Və (AND)
+||                          Və ya (OR)
+
+MİSAL🟣
+let a = 5;
+let b = 10;
+let c = 15;
+
+if (a < b && b < c) {
+    console.log("Bütün şərtlər doğrudur!"); 
+    }
+
+🔵 𝟝 – 🌊. Js adlandirma qaydalari
+JavaScript-də adlandırma qaydaları (naming conventions) kodun oxunaqlığını artırmaq, 
+təmiz və səlis bir proqram yazmaq üçün çox önəmlidir. Bununla yanaşı qeyd etmek lazimdirki funksiya adi olaraq feil parametr olaraq ise
+isin istifade etmek lazimdir. Aşşagidakilara baxaq;
+
+🟠 5.1 🟠 camelCase (Kiçik Hərflə Başlanır, Sonrakı Sözlər Böyük Hərflə Başlayır)
+Bu qayda, funksiya və dəyişən adları üçün istifadə olunur. İlk sözü kiçik hərflə, sonrakı sözləri isə böyük hərflə yazırıq.
+MİSAL🟠
+let userAge = 25;  // Dəyişən adı
+function calculateSum() {  // Funksiya adı
+  // Hesablama əməliyyatı
+}
+
+
+🟢 5.2 🟢 PascalCase (Hər Sözü Böyük Hərflə Başlayır)
+PascalCase əsasən sinif adları üçün istifadə olunur. Hər sözün ilk hərfi böyük olur və heç bir boşluq
+ və ya xüsusi simvol istifadə edilmir.
+MİSAL🟢
+class UserProfile {  // Sinif adı
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+🔵 5.3 🔵 snake_case (Sözlər Arasında Alt Xətti istifadə olunur)
+Sözlər arasında alt xətti (_) istifadə edilir.
+MİSAL🔵
+let user_name = "John";  // Dəyişən adı
+let user_address = "NY";  // Dəyişən adı
+
+
+🟣 5.4 🟣 UPPER_CASE (Böyük Hərflərlə Yazılır, Sözlər Arasında Alt Xətti istifadə olunur)
+Bu qayda, konstanta dəyişənlər üçün istifadə olunur. Adətən dəyişməz və sabit dəyərləri
+ göstərmək üçün böyük hərflər və alt xətti istifadə edilir.
+
+ MİSAL🟣
+const MAX_USERS = 100;  // Konstanta dəyişən
+const BASE_URL = "https://api.example.com";  
+
+
+🟣 𝟞 – 🔮  Js de if else  switch case (ternary)
+JavaScript-də şərtli ifadələr istifadə edərək müxtəlif vəziyyətlərə uyğun əməliyyatlar həyata keçirə bilərik. 
+Bu operatorlar kodun müxtəlif vəziyyətlərə görə idarə olunmasını təmin edir. Aşağıdakıları nəzərdən keçirək:
+
+🟠 6.1 🟠 if else Operatoru
+if else operatoru, şərtləri yoxlamaq və həmin şərtə görə fərqli əməliyyatlar yerinə yetirmək üçün istifadə olunur.
+ Əgər şərt doğrudursa, if bloku işləyir, yoxdursa else bloku işləyir.
+
+MİSAL🟠
+let age = 18;
+if (age >= 18) {
+  console.log("Yaşınız yetərli, səs verə bilərsiniz.");
+} else {
+  console.log("Yaşınız yetərli deyil.");
+}
+
+🟢 6.2 🟢 switch case Operatoru
+switch case operatoru, bir neçə mümkün vəziyyətə əsaslanaraq fərqli əməliyyatlar yerinə yetirir. Bu operator çox sayda if else yerinə daha səliqəli və oxunaqlı kod yazmağı təmin edir.
+
+MİSAL🟢
+let fruit = "alma";
+
+switch (fruit) {
+  case "alma":
+    console.log("Alma seçdiniz.");
+    break;
+  case "banan":
+    console.log("Banan seçdiniz.");
+    break;
+  default:
+    console.log("Tanımadığınız meyvə seçdiniz.");
+}
+
+🔵 6.3 🔵 ternary Operatoru
+Ternary operatoru (şərti operator), qısa şəkildə if else əməliyyatlarını yazmağa imkan verir. eger sert operatoru 1 setri tutursa
+onda ternary operatoru istifade olunur. Bu operator üç hissədən ibarətdir: şərt, doğru nəticə və yanlış nəticə.
+
+MİSAL🔵
+    let age = 20;
+let canVote = age >= 18 ? "Yaşınız yetərli, səs verə bilərsiniz." : "Yaşınız yetərli deyil.";
+console.log(canVote);
+
+
+🟤 𝟟 – 🪵. Js de  for while    do While  break continue
+JavaScript-də dövr operatorları (loops) istifadə edərək müəyyən əməliyyatları təkrarlaya bilərik. 
+Həmçinin, break və continue operatorları ilə dövrün idarə edilməsini daha da təkmilləşdirə bilərik.
+🟠 7.1 🟠 for Dövrü
+for dövrü, müəyyən bir sayda təkrarlama üçün istifadə olunur. Dövrün başlama nöqtəsi, son nöqtəsi və artımı müəyyən edilir.
+MİSAL🟠
+for (let i = 0; i < 5; i++) {
+  console.log(i);  // 0-dan 4-ə qədər olan ədədləri çap edir
+}
+Burada i = 0 başlanğıc nöqtəsidir, i < 5 dövrün şərtidir və i++ hər təkrarlamada dəyişəni artırır.
+
+🟢 7.2 🟢 while Dövrü
+while dövrü, şərt doğru olduğu müddətdə təkrarlanan əməliyyatları icra edir. while dövrü, şərt əvvəlcədən yoxlanıldığı üçün, şərt doğru olmadığı halda heç bir dəfə də işləməyə bilər.
+
+MİSAL🟢
+let i = 0;
+while (i < 5) {
+  console.log(i);  // 0-dan 4-ə qədər olan ədədləri çap edir
+  i++;  // i hər dəfə artırılır
+}
+🔵 7.3 🔵 do while Dövrü
+do while dövrü, şərt yoxlanmadan əvvəl əməliyyatı ən az bir dəfə icra edir. Yəni, do bloku ən az bir dəfə çalışacaq, sonra isə şərt yoxlanacaq.
+
+MİSAL🔵
+let i = 0;
+do {
+  console.log(i);  // 0-dan 4-ə qədər olan ədədləri çap edir
+  i++;
+} while (i < 5);
+
+🟣 7.4 🟣 break Operatoru
+break operatoru dövrü dayandırmaq üçün istifadə olunur. Dövr içərisində müəyyən şərt ödəndikdə dövrü dayandırmaq istəyə bilərsiniz.
+
+MİSAL🟣
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break;  // i = 5 olduqda dövr dayandırılacaq
+  }
+  console.log(i);  // 0-dan 4-ə qədər olan ədədləri çap edir
+}
+
+🟡 7.5 🟡 continue Operatoru
+continue operatoru dövrün cari iterasiyasını atlayıb növbəti iterasiyaya keçməyə imkan verir. Əgər müəyyən şərt ödənilsə, continue istifadə edilə bilər.
+
+MİSAL🟡
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue;  // i = 2 olduqda bu iterasiya atlanacaq
+  }
+  console.log(i);  // 0, 1, 3, 4 çap ediləcək
+}
+
+⚫ 𝟠 – 🕶️. Js de arraylar  , length  , push ve s
+JavaScript-də array (massiv) məlumatları toplamaq və saxlamaq üçün istifadə olunur. Arraylarda eyni tipli melumatlar saxlanir.
+Arraylar indexler ve deyerlerden ibaret olur. indexler 0 dan sayilmaga baslanir.
+🟠 8.1 🟠 Array Nədir?
+MİSAL🟠
+let fruits = ["alma", "banan", "üzüm"];
+console.log(fruits[0]);  // "alma"
+console.log(fruits[1]);  // "banan"
+
+🟢 8.2 🟢 length Xüsusiyyəti
+length xüsusiyyəti, array-dəki elementlərin sayını verir. Bu, array-də neçə element olduğunu tapmaq üçün istifadə olunur.
+
+MİSAL🟢
+let fruits = ["alma", "banan", "üzüm"];
+console.log(fruits.length);  // 3, array-də 3 element var
+
+🔵 8.3 🔵 push() Metodu
+push() metodu array-ə yeni elementlər əlavə etməyə imkan verir. Bu metod, əlavə olunan elementdən sonra array-in yeni uzunluğunu qaytarır.
+
+MİSAL🔵
+let fruits = ["alma", "banan"];
+fruits.push("portakal");
+console.log(fruits);  // ["alma", "banan", "portakal"]
+
+🟣 8.4 🟣 pop() Metodu
+pop() metodu, array-in sonundakı elementi silir və bu silinən elementi qaytarır. Yəni, array-in son elementini çıxarmağa imkan verir.
+
+MİSAL🟣
+let fruits = ["alma", "banan", "portakal"];
+let removedFruit = fruits.pop();
+console.log(fruits);  // ["alma", "banan"]
+console.log(removedFruit);  // "port
+
+🟡 8.5 🟡 shift() Metodu
+shift() metodu, array-in başındakı elementi silir və bu silinən elementi qaytarır.
+
+MİSAL🟡
+let fruits = ["alma", "banan", "portakal"];
+let firstFruit = fruits.shift();
+console.log(fruits);  // ["banan", "portakal"]
+console.log(firstFruit);  // "alma"
+🟢 8.6 🟢 unshift() Metodu
+unshift() metodu, array-in başına yeni elementlər əlavə edir.
+
+MİSAL🟢
+let fruits = ["banan", "portakal"];
+fruits.unshift("alma");
+console.log(fruits);  // ["alma", "banan", "portakal"]
+
+⚪ 𝟡 – 💫. Js de  object nedir nece yazilir.
+JavaScript-də Object (obyekt) məlumatları key-value (açar-dəyər) cütü ilə saxlayan verilənlər strukturudur.
+ Obyektlər, daha mürəkkəb məlumatları təşkil etmək və idarə etmək üçün istifadə edilir. Hər bir obyektin daxilində 
+ müxtəlif tipdə məlumatlar saxlanıla bilər, məsələn, string, number, boolean, array, və ya hətta başqa obyektlər.
+ 🟠 9.1 🟠 Object Nədir?
+ Obyektlər, key-value (açar-dəyər) cütlərindən ibarətdir. Burada key (açar) unikal bir identifikator, 
+ value (dəyər) isə həmin açara aid məlumatdır.
+
+🟢 9.2 🟢 Object Necə Yazılır?
+
+Obyektlər aşağıdakı formatda yazılır:
+
+Açarlar və dəyərlər arasında : (kolon) simvolu istifadə olunur.
+
+Açar-dəyər cütləri arasında vergül , istifadə edilir.
+
+Obyektlər {} qıfılları arasında yazılır.
+
+MİSAL🟢
+let person = {
+  name: "Ali",
+  age: 25,
+  city: "Bakı"
+};
+console.log(person.name);  // "Ali"
+console.log(person.age);   // 25
+console.log(person.city);  // "Bakı"
+
+🔵 9.3 🔵 Obyektə Yeni Açar və Dəyər Əlavə Etmək
+MİSAL🔵
+let person = {
+  name: "Ali",
+  age: 25
+};
+person.city = "Bakı";
+person["country"] = "Azərbaycan";
+console.log(person);
+// { name: "Ali", age: 25, city: "Bakı", country: "Azərbaycan" }
+
+🟣 9.4 🟣 Obyektin Dəyərini Dəyişdirmək
+
+MİSAL🟣
+let person = {
+  name: "Ali",
+  age: 25
+};
+
+// Nöqtə notasiya ilə dəyəri dəyişdiririk
+person.age = 26;
+
+console.log(person.age);  // 26
+
+⚪ 𝟙𝟘 – 💫 Js-də Funksiyalar və Növləri (Arrow, Declaration, Expression)
+
+JavaScript-də funksiyalar proqramın müəyyən bir hissəsini yerinə yetirmək üçün istifadə edilən bloklardır.
+ Funksiyalar təkrarlanan əməliyyatları sadələşdirmək və kodu daha oxunaqlı etmək üçün çox faydalıdır. 
+ Funksiyalar müxtəlif şəkildə yazıla bilər: function declaration, function expression, və arrow function kimi.
+ 🟠 10.1 🟠 Function Declaration (Funksiya Təsviri)
+Function declaration, ən ənənəvi və geniş istifadə olunan funksiya yazma üsuludur.
+MİSAL🟠 
+function greet(name) {
+  console.log("Salam, " + name);
+}
+
+greet("Ali");  // "Salam, Ali"
+Qeyd: Bu metodda funksiya koddan əvvəl işlədilə bilər (hoisting).
+
+🟢 10.2 🟢 Function Expression (Funksiya İfadəsi)
+Function expression metodunda funksiya bir dəyişəndə saxlanılır.
+ Bu üsulda funksiya yalnız onu təyin etdikdən sonra çağırıla bilər.
+
+MİSAL🟢
+let greet = function(name) {
+  console.log("Salam, " + name);
+};
+
+greet("terane");  // "Salam, terane"
+Qeyd: Bu üsulda funksiya bir dəyişəndə saxlandığı üçün yalnız dəyişənə təyin edildikdən sonra istifadə oluna bilər.
+
+🔵 10.3 🔵 Arrow Function (Ox Funksiyası)
+Arrow function (ox funksiyası) daha qısa və sintaksis baxımından daha sadə bir üsuldur. Bu metodda function açar sözü istifadə edilmir, bunun əvəzinə => ox işarəsi istifadə edilir. Bu funksiyalar daha sadə və oxunaqlı olur.
+
+MİSAL🔵
+let greet = (name) => {
+  console.log("Salam, " + name);
+};
+
+greet("terane");  // "Salam, terane"
+
+QEYD edek ki arroü funksiyasinda this funksiyasi yoxdur digerlerinde ise var.
+
+🔵 **𝟙𝟙 – 💫 Js-də String Template Literal
+Template literals backticks (`) ilə yazılır və ${} vasitəsilə ifadələr əlavə edilə bilər.
+Template literals ilə mətnləri birləşdirmək çox sadədir. ${} istifadə edərək dəyişənləri birbaşa mətnə daxil etmək mümkündür.
+
+🔹 MİSAL:
+let name = "terane";
+let age = 19;
+
+let greeting = `Salam, mənim adım ${name} və mən ${age} yaşındayam.`;
+
+console.log(greeting);  // "Salam, mənim adım terane və mən 19 yaşındayam."
+
+🟢 11.2 🟢 Çox Sətirli Stringlər
+
+Template literals ilə çox sətirli mətnlər yaratmaq çox asandır. \n simvolu istifadə etmədən bir neçə sətir əlavə edə bilərsiniz.
+
+🔹 MİSAL:
+let message = `Bu, birinci sətirdir.
+İkinci sətir buradadır.
+Üçüncü sətir isə burada.`;
+
+console.log(message);
+/*
+Çap ediləcək:
+Bu, birinci sətirdir.
+İkinci sətir buradadır.
+Üçüncü sətir isə burada.
+*/
+
+⚪ **𝟙𝟚 – 💫 Js-də String Metodları
+
+JavaScript-də stringlər üzərində əməliyyatlar aparmaq üçün müxtəlif metodlar mövcuddur.
+🟠 12.1 🟠 charAt()
+charAt() metodu, bir stringin müəyyən bir indeksindəki simvolu əldə etməyə imkan verir.
+
+🔹 MİSAL:
+let str = "Salam Dünya!";
+let char = str.charAt(4);
+
+console.log(char);  // "m"
+
+🟣 12.2 🟣 indexOf()
+indexOf() metodu, bir stringin içərisində müəyyən bir alt stringin ilk tapıldığı yeri qaytarır. Əgər tapılmasa, -1 döndərir.
+
+🔹 MİSAL:
+let str = "Salam Dünya!";
+let index = str.indexOf("Dünya");
+
+console.log(index);  // 6
+
+🟡 12.3 🟡 replace()
+replace() metodu, stringin müəyyən bir hissəsini dəyişdirmək üçün istifadə olunur. Yalnız ilk uyğunluğu dəyişdirir.
+
+🔹 MİSAL:
+
+let str = "Salam Dünya!";
+let newStr = str.replace("Dünya", "JavaScript");
+
+console.log(newStr);  // "Salam JavaScript!"
+
+
+🟢 12.4 🟢 slice()
+slice() metodu, bir stringin müəyyən bir hissəsini kəsib almağa imkan verir. Bu metodda başlanğıc və son indeks verilir.
+
+🔹 MİSAL:
+
+let str = "Salam Dünya!";
+let sliced = str.slice(6, 12);
+
+console.log(sliced);  // "Dünya"
+
+
+🟣 12.5 🟣 toLowerCase()
+toLowerCase() metodu, stringin bütün hərflərini kiçik hərflərlə dəyişdirir.
+
+🔹 MİSAL:
+
+let str = "Salam Dünya!";
+let lowerStr = str.toLowerCase();
+
+console.log(lowerStr);  // "salam dünya!"
+
+
+🟡 12.6 🟡 toUpperCase()
+toUpperCase() metodu, stringin bütün hərflərini böyük hərflərlə dəyişdirir.
+
+🔹 MİSAL:
+
+let str = "Salam Dünya!";
+let upperStr = str.toUpperCase();
+
+console.log(upperStr);  // "SALAM DÜNYA!"
+
+
+ 🟠 12.7 🟠 trim()
+trim() metodu, bir stringin əvvəlində və sonunda olan boşluqları silir.
+
+🔹 MİSAL:
+
+let str = "   Salam Dünya!   ";
+let trimmedStr = str.trim();
+
+console.log(trimmedStr);  // "Salam Dünya!"
+
+🟢 12.8 🟢 length
+length metodu, bir stringin uzunluğunu (karakter sayı) əldə etmək üçün istifadə olunur.
+
+🔹 MİSAL:
+
+let str = "Salam Dünya!";
+let length = str.length;
+
+console.log(length);  // 13
+
+
+ve.s
+
+
+⚪ **𝟙𝟛 – 💫 Js-də Hoisting
+JavaScript de hoisting dəyişənin və ya funksiyanın yaradılmasından əvvəl çağırılmasıdır.
+MİSAL
+
+console.log(x);  // undefined, çünki x 'var' ilə elan edilib, amma dəyəri təyin edilməyib
+
+var x = 10;
+
+console.log(x);  // 10, çünki artıq x dəyişəni dəyər alıb
+
+console.log(a);  // ReferenceError: Cannot access 'a' before initialization
+let a = 5;
+ Yuxarda da qeyd etdiyimiz kimi var ile elan olunan deyisenler hoisting zamani undefined netice qaytarir bu ise tamami ile yanlisdir.
+ let ise error verir.
+
+
+
+
+ ******end******
+
+
+
+
